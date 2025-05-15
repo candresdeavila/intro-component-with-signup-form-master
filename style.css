@@ -116,7 +116,7 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 6px 0px 0px rgba(56,204,140,1);
-    -webkit-box-shadow: 0px 6px 0px 0px rgba(56,204,140,1);
-    -moz-box-shadow: 0px 6px 0px 0px rgba(56,204,140,1);
+    box-shadow: 0px 6px 0px 0px rgba(53, 184, 127);
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(53, 184, 127);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(53, 184, 127);
 }
