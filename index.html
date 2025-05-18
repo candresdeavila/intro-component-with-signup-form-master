@@ -14,24 +14,42 @@
     rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+
 </head>
+
 <body>
   <main>
     <div class="container">
       <div class="main-text-container">
         <h1>Learn to code by<br> watching others</h1>
 
-        <p>See how experienced developers solve problems in real-time. Watching <br>scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        <p>See how experienced developers solve problems in real-time. Watching <br>scripted tutorials is great, but
+          understanding how developers think is invaluable.</p>
         <button><b>Try it free 7 days</b> then <br>$20/mo. thereafter</button>
       </div>
 
       <div class="form-container">
-        <form action="">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
-          <input type="email" placeholder="Email Address" required>
-          <input type="password" placeholder="Password" required>
+        <form id="form" novalidate>
+          <div class="form-control">
+            <input type="text" placeholder="First Name" id="first-name">
+            <img src="./images/icon-error.svg" alt="error icon" class="error-icon">
+            <small>First Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Last Name" id="last-name">
+            <img src="./images/icon-error.svg" alt="error icon" class="error-icon">
+            <small>Last Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Email Address" id="email">
+            <img src="./images/icon-error.svg" alt="error icon" class="error-icon">
+            <small>Looks like this is not an email</small>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="Password" id="password">
+            <img src="./images/icon-error.svg" alt="error icon" class="error-icon">
+            <small>Password cannot be empty</small>
+          </div>
           <button type="submit">Claim your free trial</button>
           <p class="terms">By clicking the button, you are agreeing to <br>our <a href="#">Terms and Services</a></p>
         </form>

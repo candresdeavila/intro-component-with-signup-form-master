@@ -98,13 +98,47 @@ form {
     flex-direction: column;
     gap: 10px;
 }
-
+/* Javascript part form */
 .form-container input {
+    width: 100%;
     padding: 10px;
     border: 1px solid var(--grayish-blue);
     border-radius: 5px;
 }
 
+input.error {
+  border: 2px solid red;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+small {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.error .error-icon {
+  display: block;
+}
+
+.form-control.error small {
+  display: block;
+}
+
+/* Javascript part form */
 .form-container input:focus {
     border-color: var(--blue);
     outline: none;
@@ -146,3 +180,9 @@ form {
     text-decoration: none;
     font-weight: 500;
 }
+
+.form-control {
+  position: relative;
+  margin-bottom: 20px;
+}
+
